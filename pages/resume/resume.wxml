@@ -1,0 +1,49 @@
+<!--pages/resume/ resume.wxml-->
+<view class="container">
+  <view class="avatar">
+    <image src="/images/classify.png"></image>
+  </view>
+  <view style="font-size:34rpx;color:#959595;margin-left:30rpx;margin-bottom:30rpx;">请您完善的您的基本信息</view>
+  <view class="re-list">
+    <view style="color:#222;font-size:32rpx;width:200rpx">姓名</view>
+    <input placeholder='请输入您的姓名' placeholder-style='font-size:32rpx;' style="height:100%;width:490rpx;color:#666;font-weight:none;" maxlength='8'></input>
+  </view>
+  <view class="re-list">
+    <view style="color:#222;font-size:32rpx;width:200rpx">性别</view>
+    <view class="sex">
+      <view bindtap='chooseSex' data-sex='boy'  style="margin-right:20rpx;">
+        <icon  type="circle" size="23" wx:if="{{choSex=='gril'}}"></icon>
+         <icon  type="success" size="23" wx:if="{{choSex=='boy'}}"></icon>
+        男
+      </view>
+      <view bindtap='chooseSex' data-sex='gril'>
+        <icon  type="circle" size="23" wx:if="{{choSex=='boy'}}"></icon>
+        <icon  type="success" size="23" wx:if="{{choSex=='gril'}}"></icon>
+        女
+      </view>
+    </view>
+  </view>
+  <view class="re-list">
+    <view style="color:#222;font-size:32rpx;width:200rpx">出生日期</view>
+    <picker mode="date" value="" bindchange="bindDateChange" style="height:100%">
+      <view class="picker">
+      </view>
+    </picker>
+  </view>
+  <view class="re-list">
+  <view style="color:#222;font-size:32rpx;width:200rpx">教育情况</view>
+     <view class="sex" >
+      <view bindtap='chooseGra' data-gra='school' style="margin-right:20rpx;">
+        <icon  type="circle" size="23" wx:if="{{chooseGra=='graduate'}}"></icon>
+         <icon  type="success" size="23" wx:if="{{chooseGra=='school'}}"></icon>
+        在读
+      </view>
+      <view bindtap='chooseGra' data-gra='graduate'>
+        <icon  type="circle" size="23" wx:if="{{chooseGra=='school'}}"></icon>
+        <icon  type="success" size="23" wx:if="{{chooseGra=='graduate'}}"></icon>
+        已毕业
+      </view>
+    </view>
+  </view>
+  <view class="btn1" bindtap='goIndex'>提交</view>
+</view>

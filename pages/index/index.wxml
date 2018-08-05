@@ -1,0 +1,19 @@
+<!--index.wxml-->
+<view class="container">
+    <view class="search">
+      <view class="address"><text style="font-size:32rpx">佛山</text><image src="/images/down.png"></image></view>
+      <view class="search-inp">
+        <image src="/images/search.png" class="pos1"></image>
+        <text style="color:#c5c5c5;font-size:28rpx">大家都在搜:兼职</text>
+      </view>
+    </view>
+    <view class="list" wx:for="{{jobList}}">
+      <image class="list-image" src="/images/com.png"></image>
+      <view class="list-text">
+          <view class="list-one"><text>{{item.name}}</text><text style="color:#32e0c1">{{item.price}}元/天</text></view>
+          <view class="list-two"><text>{{item.address}}/完工结</text><text>{{item.work_hour}}</text></view>
+          <view class="list-btn">黄金企业</view>
+      </view>
+    </view>
+    
+</view>

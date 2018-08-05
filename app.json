@@ -1,0 +1,43 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/resume/resume",
+    "pages/login/login",
+    "pages/mine/mine",
+    "pages/classify/classify",
+    "pages/logs/logs"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#32e0c1",
+    "navigationBarTitleText": "兼职",
+    "navigationBarTextStyle": "#fff"
+  },
+  "tabBar": {
+    "color": "#707070",
+    "selectedColor": "#32e0c1",
+    "borderStyle": "back",
+    "backgroundColor": "#fff",
+    "box-shadow": "0 0 6px 0",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "images/no-home.png",
+        "selectedIconPath": "images/home.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/classify/classify",
+        "iconPath": "images/no-classify.png",
+        "selectedIconPath": "images/classify.png",
+        "text": "分类"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "iconPath": "images/no-user.png",
+        "selectedIconPath": "images/user.png",
+        "text": "我的"
+      }
+    ]
+  }
+}

@@ -1,0 +1,13 @@
+<!--pages/mine/mine.wxml-->
+<view class="container">
+  <view class="user-poster">
+
+    <view class="user">
+      <view class="avatar">
+        <image src="/images/com.png"></image>
+      </view>
+      <text style="font-size:30rpx;color:#fff;margin:15rpx 0;">李屁屁</text>
+      <text class="write">编辑简历</text>
+    </view>
+  </view>
+</view>
